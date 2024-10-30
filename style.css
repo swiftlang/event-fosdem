@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.gradient-background {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgb(233, 233, 233) 0%, rgb(255, 255, 255) 25%, rgb(233, 233, 233) 100%);
+}
+
+body {
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+}
+
+.left-container {
+    text-align: left;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.centered-container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+a {
+    color: rgb(159, 32, 32);
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div {
+    text-align: center;
+    margin-bottom: 20pt;
+    width: 75%;
+    padding: 10pt;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+p {
+    margin: 0.5em;
+    text-align: justify;
+}
+
+h1 {
+    font-size: 2.5em;
+    padding: 10pt;
+}
+
+h2 {
+    padding-top: 10pt;
+    padding-bottom: 10pt;
+}
+
+h3 {
+    margin-top: 0.5em;
+    text-align: left;
+}
+
+p {
+    text-align: justify;
+}
+
+ul {
+    padding: 1pt 20px;
+    margin-left: 3pt;
+    text-align: left;
+}
+
+.footer {
+    text-align: center;
+    font-size: .75em;
+}
