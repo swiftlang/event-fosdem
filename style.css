@@ -1,7 +1,6 @@
 body {
     margin: 0;
     font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    background: linear-gradient(to right, #ff8b6e 0%, #ffaa95 20%, #ffffff 80%);
     color: #333;
     line-height: 1.6;
 }
