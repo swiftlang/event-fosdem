@@ -41,6 +41,22 @@ section:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
+button {
+    padding: 10px 20px;
+    background-color: #F05137;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.4em;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
 ul {
     list-style-type: disc;
 }
