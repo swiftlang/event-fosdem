@@ -1,4 +1,4 @@
-# Swift DevRoom FOSDEM 2024 - Call for Proposals
-Repo for coordinating the Swift DevRoom at FOSDEM
+# Swift @ FOSDEM Websote
+Repo for coordinating Swift activities at FOSDEM
 
 Please use [GitHub Pages](https://swiftlang.github.io/event-fosdem) to render this content. 
