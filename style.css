@@ -126,6 +126,48 @@ td a:hover {
     text-decoration: underline;
 }
 
+.expandable-row {
+    cursor: pointer;
+}
+
+.expandable-row td:nth-child(2)::after {
+    content: " ▼";
+    font-size: 0.8em;
+    color: #ff7e5f;
+    margin-left: 5px;
+}
+
+.expandable-row.expanded td:nth-child(2)::after {
+    content: " ▲";
+}
+
+.expandable-content {
+    display: none;
+}
+
+.expandable-content.expanded {
+    display: table-row;
+}
+
+.expandable-content td {
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+.talk-details {
+    padding: 10px 0;
+}
+
+.talk-details h4 {
+    margin: 0 0 10px 0;
+    color: #ff7e5f;
+}
+
+.talk-details p {
+    margin: 0 0 15px 0;
+    line-height: 1.6;
+}
+
 @media (max-width: 768px) {
     .logo {
         width: 100px;

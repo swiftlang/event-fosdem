@@ -86,74 +86,215 @@
                     <td>Lunch</td>
                     <td></td>
                 </tr>
-                <tr>
+
+                <tr class="expandable-row" data-talk="talk1">
                     <td>01:05 - 01:30 PM</td>
                     <td>Opening Keynote</td>
                     <td>Ben Cohen</td>
                 </tr>
-                <tr>
+                <tr class="expandable-content" data-talk="talk1">
+                    <td colspan="3">
+                        <div class="talk-details">
+                            <h4>Abstract</h4>
+                            <p>Join us for the opening keynote to kick off the Swift Pre-FOSDEM Community Event 2026.</p>
+                            <h4>Speaker Bio</h4>
+                            <p>Ben is a manager on the Swift team at Apple.</p>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr class="expandable-row" data-talk="talk2">
                     <td>01:30 - 01:50 PM</td>
                     <td>Type checking Swift: challenges and improvements</td>
                     <td>Slava Pestov</td>
                 </tr>
-                <tr>
+                <tr class="expandable-content" data-talk="talk2">
+                    <td colspan="3">
+                        <div class="talk-details">
+                            <h4>Abstract</h4>
+                            <p>The design of Swift's type checker is somewhat unusual among programming languages, because it combines constraint solving with type-based overloading. This allows for expressive API design, but it also introduces some challenges with performance and diagnostics. As is well-known, in the worst case, this kind of constraint system problem takes exponential time to solve. On the other hand, there is much one can do to improve performance on "realistic" inputs. In this talk, I will discuss the design of Swift's constraint solver, outline some recent improvements made in Swift 6.2 and 6.3, and talk about the roadmap for future improvements.</p>
+                            <h4>Speaker Bio</h4>
+                            <p>Slava Pestov is a Swift compiler developer at Apple, having spent much of the last ten years improving Swift's type checker and implementation of generics. Slava enjoys playing around with abstract algebra and its many connections to computer science. Prior to joining the Swift team, Slava led the development of the Factor programming language (https://factorcode.org) and the jEdit text editor (https://jedit.org).</p>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr class="expandable-row" data-talk="talk3">
                     <td>01:50 - 02:00 PM</td>
-                    <td>Follow the Rules: What's New in SwiftLint</td>
+                    <td>Follow the Rules: What's New in SwiftLint <small>(lightning talk)</small></td>
                     <td>Danny Mösch</td>
                 </tr>
+                <tr class="expandable-content" data-talk="talk3">
+                    <td colspan="3">
+                        <div class="talk-details">
+                            <h4>Abstract</h4>
+                            <p>If your SwiftLint configuration hasn't changed in a while, you may be missing out. SwiftLint evolves with the Swift language. New rules are regularly added, but they're easy to overlook because they're usually disabled by default. This talk highlights recently introduced or lesser-known SwiftLint rules, explains the problems they aim to solve, and shows practical examples of when to enable/disable them. Understand why false positives are sometimes unavoidable and learn how to keep your configuration up to date and concise at the same time.</p>
+                            <h4>Speaker Bio</h4>
+                            <p>Danny's main interests revolve around language tools and developer experience. While he does not work with Swift professionally, he maintains SwiftLint in his spare time. He really enjoys open source, especially the amazing work done in the Swift community. Working on SwiftLint is his contribution to the realm of free and open software that we all benefit from every day.</p>
+                        </div>
+                    </td>
+                </tr>
+
                 <tr>
                     <td>02:00 - 02:10 PM</td>
-                    <td>Break</td>
+                    <td>Short Break</td>
                     <td></td>
                 </tr>
-                <tr>
+
+                <tr class="expandable-row" data-talk="talk4">
                     <td>02:10 - 02:30 PM</td>
                     <td>Swift for Embedded Linux with WendyOS</td>
                     <td>Joannis Orlandos</td>
                 </tr>
-                <tr>
+                <tr class="expandable-content" data-talk="talk4">
+                    <td colspan="3">
+                        <div class="talk-details">
+                            <h4>Abstract</h4>
+                            <p>Robotics, AI and IoT are becoming ever more present in the world around us. Swift is uniquely positioned to empower developers to write highly reliable and maintainable real-time systems for this emerging world.</p>
+                            <p>WendyOS is the Open Source Physical AI Operating System written in Swift. Wendy is designed to help you get set up quickly and iterate even quicker!</p>
+                            <p>In this talk, we'll cover how Wendy helps you rapidly iterate on your next Swift project for AI, Robotics or IoT. We'll dive into the Swift tools we use to bring this development experience to all platforms - including Windows. Finally, we'll cover our next steps and goals to help bring your Swift code to even more platforms.</p>
+                            <h4>Speaker Bio</h4>
+                            <p>Joannis Orlandos is an Open Source Swift developer and co-founder of Wendy Labs, having contributed to the ecosystem for over 10 years. He is currently the chair of the Swift Android Workgroup, and member of the Server Workgroup and newly founded Build & Packaging workgroup. He's co-created many libraries and frameworks including both Vapor and Hummingbird. These days he's using his expertise building out the Swift community towards newer platforms including Android and Embedded (Linux) use cases. When Joannis isn't doing opensource, he's planning D&D sessions or playing board games.</p>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr class="expandable-row" data-talk="talk5">
                     <td>02:30 - 02:40 PM</td>
-                    <td>CoreAVR + ArduinoKit: Swift on the Arduino, the Swift way</td>
+                    <td>CoreAVR + ArduinoKit: Swift on the Arduino, the Swift way <small>(lightning talk)</small></td>
                     <td>Brent Van den Abbeel</td>
                 </tr>
-                <tr>
+                <tr class="expandable-content" data-talk="talk5">
+                    <td colspan="3">
+                        <div class="talk-details">
+                            <h4>Abstract</h4>
+                            <p>During my Internship at Swift for Arduino (S4A), I worked on two pieces of software, CoreAVR and ArduinoKit, that enable people interested in using Swift on their Arduino boards to do so in an easy-to-understand way.</p>
+                            <p>CoreAVR is a Hardware Abstraction Layer for AVR microcontrollers written in Swift. It abstracts low-level register operations into intuitive, type-safe APIs, offering a modern alternative to tradition C-based libraries. Additionally, CoreAVR offers built-in support for Interrupts, IO, Timer/Counter functionality with PWM, SPI, UART, and more, making hardware interactions safer and easier to read and understand.</p>
+                            <p>Building on CoreAVR, ArduinoKit acts as the Arduino standard library for S4A, fully exposing the underlying features of CoreAVR, but adding higher-level functionality, such as easy-to-use Digital and Analog IO, Timing functions (delay, millis, …), Serial communication, and more. ArduinoKit additionally has a dual architecture, allowing both modern Swift-like APIs to be used, as well as older Arduino-style functions, to ease migration for users originally coming from Arduino.</p>
+                            <p>This talk will serve as an introduction to both pieces of software, where a general overview will be given, as well as code comparisons with their C-based counterparts.</p>
+                            <h4>Speaker Bio</h4>
+                            <p>Brent Van den Abbeel is a 20-year-old software developer from Flanders, Belgium, specializing in Swift and JVM technologies. He is currently completing his studies in applied computer science and recently finished an Internship at Swift for Arduino, where he worked on CoreAVR and created the ArduinoKit project. Brent also has interests in rocketry and aerospace, aspiring to one day launch his own startup in the field.</p>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr class="expandable-row" data-talk="talk6">
                     <td>02:40 - 03:00 PM</td>
                     <td>Swift in the Browser with ElementaryUI</td>
                     <td>Simon Leeb</td>
                 </tr>
-                <tr>
+                <tr class="expandable-content" data-talk="talk6">
+                    <td colspan="3">
+                        <div class="talk-details">
+                            <h4>Abstract</h4>
+                            <p>Swift is found in many places - from tiny devices to large server applications - where it delivers modern ergonomics, strong safety guarantees, and excellent performance. Web frontend development, however, is still largely centered around JavaScript, with very little Swift in sight.</p>
+                            <p>With WebAssembly support firming up and Embedded Swift enabling tiny binaries, running Swift in the browser is evolving from a complicated endeavor into a viable option.</p>
+                            <p>In this session, we get to know the new open-source project ElementaryUI: a Swift frontend framework for building web applications. It brings Swift's safety and expressiveness to the frontend, allowing developers to describe state-driven user interfaces using an idiomatic, SwiftUI-inspired syntax while remaining firmly a web framework.</p>
+                            <p>The talk covers the essentials to go from zero to "Swift in the Browser": setting up a dev environment, composing views into a web UI, handling user inputs and events, and transitions and animations. A live-coding session will showcase the framework's features in action, leveraging hot-reloading for rapid iteration, before we conclude with a brief look at the road ahead.</p>
+                            <p>Whether you are an iOS developer looking to branch out or a web enthusiast seeking a safer alternative to JavaScript, this talk offers a practical entry point. It is time to make Swift in the browser happen!</p>
+                            <h4>Speaker Bio</h4>
+                            <p>Simon has spent long enough in software to know that creating a new web framework is a bad idea — and did it anyway. After falling for Swift on the server, he accidentally tumbled into the Swift + WebAssembly universe and decided to stay. As a father of two based in Austria, he is currently juggling running a business, shipping code, bedtime stories, and the unsettling realization that he might be middle-aged — all while trying to bring Swift's safety and ergonomics to the browser.</p>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr class="expandable-row" data-talk="talk7">
                     <td>03:00 - 03:10 PM</td>
-                    <td>SwiftCrossUI: Swift apps, everywhere</td>
+                    <td>SwiftCrossUI: Swift apps, everywhere <small>(lightning talk)</small></td>
                     <td>Mia Koring</td>
                 </tr>
+                <tr class="expandable-content" data-talk="talk7">
+                    <td colspan="3">
+                        <div class="talk-details">
+                            <h4>Abstract</h4>
+                            <p>Swift supports more platforms than ever, yet Swift app developers are stuck targeting Apple platforms. SwiftCrossUI changes everything by bringing SwiftUI to Android, Linux, and Windows, using native UI components on each platform. First we'll cover the basics of SwiftCrossUI. Then we'll look at Swift Bundler which is the recommended way to ship SwiftCrossUI apps to multiple platforms. And finally, we'll demo SwiftCrossUI's hot reloading support. You'll come away from this session with the basic knowledge required to develop apps for Apple platforms, Windows, Linux, and Android, all without leaving the comfort of Swift.</p>
+                            <h4>Speaker Bio</h4>
+                            <p>Mia Koring is a Fullstack Swift developer and creator of Amethyst Browser and Authenticator. As a big fan of the Swift ecosystem, she is a contributor to swift-cross-ui and actively works on expanding the toolset for cross-platform native apps in Swift. Currently, she is developing Amethyst Vein - a controllable, cross-platform, and end-to-end encrypted open-source alternative to SwiftData, compatible with swift-cross-ui and SwiftUI. Mia is deeply committed to personal data sovereignty and source-transparency, ensuring users retain control over their digital lives and can verify claims. Besides programming, she likes to play Minecraft, read, or play board games.</p>
+                        </div>
+                    </td>
+                </tr>
+
                 <tr>
                     <td>03:10 - 03:40 PM</td>
                     <td>Break</td>
                     <td></td>
                 </tr>
-                <tr>
+
+                <tr class="expandable-row" data-talk="talk8">
                     <td>03:40 - 04:00 PM</td>
                     <td>Introducing the Swift SDK for Android</td>
                     <td>Marc Prud'hommeaux</td>
                 </tr>
-                <tr>
+                <tr class="expandable-content" data-talk="talk8">
+                    <td colspan="3">
+                        <div class="talk-details">
+                            <h4>Abstract</h4>
+                            <p>Swift has rapidly grown beyond its origins on Apple platforms, becoming a powerful language for systems programming, server-side development, and cross-platform applications. Over the past few years, steady progress in tooling, language portability, and community experimentation has made it increasingly viable to use Swift for Android application development, culminating with the formation of the Swift Android workgroup in 2025 and the release of the Swift SDK for Android. This talk explores the current state of Swift on Android, focusing on what is practical today, what teams are already shipping, and how the ecosystem may evolve in the coming years.</p>
+                            <p>We will begin with an overview of how Swift code can be compiled and executed on Android, including the role of the Swift toolchain, cross-compilation SDKs, and interaction with the Android runtime. From there, the talk will dive into integration with the Android SDK, covering common patterns for calling Java and Kotlin APIs from Swift, bridging via JNI, and leveraging existing Android libraries without rewriting entire stacks.</p>
+                            <p>User interface strategies will be discussed, comparing approaches such as using Kotlin or Java Android UI frameworks (Views and Jetpack Compose) alongside Swift-based business logic, as well as other solutions for higher-level UI abstraction. Particular attention will be given to real-world tradeoffs in performance, developer experience, and maintainability.</p>
+                            <p>Finally, the talk will address the challenges of tooling interoperability, examining how Swift Package Manager can coexist with Gradle and Android Studio, and what smoother workflows might look like in the future. Attendees will leave with a clear picture of what is possible today, where the rough edges remain, and how Swift is maturing into a first-class cross-platform option for creating universal apps from a single codebase.</p>
+                            <h4>Speaker Bio</h4>
+                            <p>Marc Prud'hommeaux is a longtime contributor to the Swift project and the creator of skip.tools, which enables the creation of dual-platform iOS/Android apps in Swift. He is a founding member of the Swift Android Workgroup.</p>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr class="expandable-row" data-talk="talk9">
                     <td>04:00 - 04:10 PM</td>
-                    <td>Swift on Android: Building a Idiomatic Cross-Platform Library with Swift/Java Interop</td>
+                    <td>Swift on Android: Building a Idiomatic Cross-Platform Library with Swift/Java Interop <small>(lightning talk)</small></td>
                     <td>Mads Odgaard</td>
                 </tr>
-                <tr>
+                <tr class="expandable-content" data-talk="talk9">
+                    <td colspan="3">
+                        <div class="talk-details">
+                            <h4>Abstract</h4>
+                            <p>At Frameo we distribute multiple Android apps and an iOS app to over 20 million users. Traditionally, sharing core features meant maintaining separate Swift and Java implementations, doubling the effort and the potential for bugs. With the recent advancements in the swift-java project and the official Swift Android SDK, we are now able to build cross-platform libraries in Swift with little effort, sharing core functionality across our products. Not only does it save time and costs, but we are also able to take advantage of Swift's performance, safety and the existing library ecosystem!</p>
+                            <p>In this talk we will go over what is new since the release of the JNI mode last summer. We will cover how these new additions allows us to generate idiomatic Java libraries for our Android developers, while preserving Swift's core features such as protocols and Swift Concurrency.</p>
+                            <p>We will walk through a feature we wanted to build in the Frameo software and how we wrote a Swift package for end-to-end encrypted communication. We demonstrate how little effort it takes to wrap that package using the swift-java JNI mode and compile it using the Android SDK, such that we have a cross-platform library we can use on both iOS and Android.</p>
+                            <h4>Speaker Bio</h4>
+                            <p>Mads is a Tech Lead at Frameo in Denmark. During Google Summer of Code 2025, he worked on bringing JNI support to the jextract tool, which is part of the Swift Java interoperability project. Since then he has continued working on the JNI mode. At Frameo he uses this work to build cross-platform libraries in Swift, for both Android and iOS. Outside of coding, he spends a lot of time playing sports and music!</p>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr class="expandable-row" data-talk="talk10">
                     <td>04:10 - 04:30 PM</td>
                     <td>Closing the performance gap between Swift and C</td>
                     <td>Paul Toffoloni</td>
                 </tr>
-                <tr>
+                <tr class="expandable-content" data-talk="talk10">
+                    <td colspan="3">
+                        <div class="talk-details">
+                            <h4>Abstract</h4>
+                            <p>Password hashing in Vapor has relied on C code for years because pure Swift implementations of Bcrypt were unusably slow in debug builds—taking tens of seconds where C took milliseconds. This forces a critical part of our ecosystem to depend on foreign code.</p>
+                            <p>While bcrypt is a simple algorithm, it comes with a computationally heavy setup that tanks debug performance when using unoptimised code. The latest versions of Swift offer new tools to address this, but can they actually close the gap?</p>
+                            <p>This talk chronicles my attempt to rewrite bcrypt in pure Swift and match C's debug performance. I'll share what I learned exploring different approaches: from unsafe pointers to Swift 6's new Span type. There will be real benchmarks showing what worked, what didn't and why, and we'll examine the tradeoffs between performance, safety, and ergonomics of each approach.</p>
+                            <h4>Speaker Bio</h4>
+                            <p>I'm Paul, a server-side Swift developer at Broken Hands where I do consultancy for various clients around the world and contribute to Vapor and its ecosystem. I'm a maintainer for some of Vapor's packages and am particularly passionate about cryptography and networking. Outside of programming, I love travel and good food.</p>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr class="expandable-row" data-talk="talk11">
                     <td>04:30 - 04:40 PM</td>
-                    <td>Building a Vault Client in Swift with OpenAPI and Pkl, or How I learned to stop worrying and love the Bao</td>
+                    <td>Building a Vault Client in Swift with OpenAPI and Pkl, or How I learned to stop worrying and love the Bao <small>(lightning talk)</small></td>
                     <td>Javier Cuesta</td>
                 </tr>
+                <tr class="expandable-content" data-talk="talk11">
+                    <td colspan="3">
+                        <div class="talk-details">
+                            <h4>Abstract</h4>
+                            <p>As teams and organizations scale, managing secrets securely becomes a critical challenge. How do you prevent credential sprawl? How do you audit access, both human and machine? And how do you respond quickly when secrets leak? Fortunately, tools like OpenBao and Hashicorp Vault offer well tested solutions to these problems, but integrating them natively into Swift applications seems to be missing.</p>
+                            <p>In this talk, we'll introduce VaultCourier, a Swift package that can access both OpenBao and Hashicorp Vault. We'll discuss how to build Swift clients for large third-party APIs using swift-openapi and Pkl, using the development of VaultCourier as an example.</p>
+                            <h4>Speaker Bio</h4>
+                            <p>I'm a Swift developer based in Munich, working at Quartett mobile. Driven by curiosity, I joined the Swift Mentorship Program in 2022 and have contributed to the Swift Package Index. I enjoy exploring Swift across different types of projects, with a particular passion for server-side development. Before fully transitioning into software engineering, I spent time in the world of Mathematics and Physics. I enjoy nature, sports, and dancing.</p>
+                        </div>
+                    </td>
+                </tr>
+
                 <tr>
-                    <td>04:40 - 04:45 PM</td>
-                    <td>Closing</td>
+                    <td>04:40 - 06:00 PM</td>
+                    <td>Closing & Reception</td>
                     <td></td>
                 </tr>
                 </tbody>
@@ -279,5 +420,20 @@
         Found a typo? <a href="https://github.com/swiftlang/event-fosdem" target="_blank">Edit this page</a>.
     </div>
 </div>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const expandableRows = document.querySelectorAll('.expandable-row');
+
+        expandableRows.forEach(function(row) {
+            row.addEventListener('click', function() {
+                const talkId = this.getAttribute('data-talk');
+                const contentRow = document.querySelector('.expandable-content[data-talk="' + talkId + '"]');
+
+                this.classList.toggle('expanded');
+                contentRow.classList.toggle('expanded');
+            });
+        });
+    });
+</script>
 </body>
 </html>
